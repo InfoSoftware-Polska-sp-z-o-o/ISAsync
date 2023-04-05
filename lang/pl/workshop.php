@@ -1,0 +1,361 @@
+<?php
+// This file is part of Moodle - https://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
+
+/**
+ * Strings for component 'workshop', language 'pl', version '4.0'.
+ *
+ * @package     workshop
+ * @category    string
+ * @copyright   1999 Martin Dougiamas and contributors
+ * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
+defined('MOODLE_INTERNAL') || die();
+
+$string['aggregategrades'] = 'Przelicz oceny';
+$string['aggregation'] = 'Zestawienie ocen';
+$string['allocate'] = 'Przydziel przesłane zadania';
+$string['allocatedetails'] = 'oczekiwano: {$a->expected}<br />złożono: {$a->submitted}<br />do przydzielenia: {$a->allocate}';
+$string['allocation'] = 'Przydział przesłanych zadań';
+$string['allocationconfigured'] = 'Przydział skonfigurowany';
+$string['allocationdone'] = 'Przydział wykonany';
+$string['allocationerror'] = 'Błąd przydziału';
+$string['allowedfiletypesforoverallfeedback'] = 'Akceptowane typy plików z informacją zwrotną';
+$string['allowedfiletypesforsubmission'] = 'Akceptowane typy załączonych plików';
+$string['allsubmissions'] = 'Wszystkie rozwiązania ({$a})';
+$string['alreadygraded'] = 'Już ocenione';
+$string['areaconclusion'] = 'Wnioski';
+$string['areainstructauthors'] = 'Instrukcje wykonania prac';
+$string['areainstructreviewers'] = 'Instrukcje recenzowania';
+$string['areasubmissionattachment'] = 'Załączniki prac';
+$string['areasubmissioncontent'] = 'Teksty prac';
+$string['assess'] = 'Recenzuj';
+$string['assessedexample'] = 'Zrecenzowana przykładowa praca';
+$string['assessedsubmission'] = 'Zrecenzowana praca';
+$string['assessingexample'] = 'Recenzowanie przykładowej pracy';
+$string['assessingsubmission'] = 'Recenzowanie pracy';
+$string['assessment'] = 'Recenzja';
+$string['assessmentby'] = 'przez <a href="{$a->url}">{$a->name}</a>';
+$string['assessmentbyfullname'] = 'Zrecenzowana przez {$a}';
+$string['assessmentbyyourself'] = 'Twoja recenzja';
+$string['assessmentdeleted'] = 'Przydział pracy do recenzji usunięty';
+$string['assessmentend'] = 'Koniec fazy recenzowania prac';
+$string['assessmentendbeforestart'] = 'Termin końca fazy recenzowania nie może być ustalony przed terminem początku recenzowania';
+$string['assessmentenddatetime'] = 'Końcowy termin recenzowania: {$a->daydatetime} ({$a->distanceday})';
+$string['assessmentendevent'] = '{$a} (ostateczny termin recenzowania)';
+$string['assessmentform'] = 'Formularz recenzowania';
+$string['assessmentofsubmission'] = '<a href="{$a->assessmenturl}">Recenzja</a> pracy <a href="{$a->submissionurl}">{$a->submissiontitle}</a>';
+$string['assessmentreference'] = 'Przykładowa recenzja';
+$string['assessmentreferenceconflict'] = 'Nie można recenzować przykładowej pracy, dla której już napisałeś przykładową recenzję.';
+$string['assessmentreferenceneeded'] = 'Musisz zrecenzować tę przykładową pracę, aby udostępnić przykładową recenzję. Kliknij "Kontynuuj", aby zrecenzować pracę.';
+$string['assessments'] = 'Recenzje';
+$string['assessmentsettings'] = 'Ustawienia recenzowania';
+$string['assessmentstart'] = 'Początek fazy recenzowania prac';
+$string['assessmentstartdatetime'] = 'Otwarte do recenzji od {$a->daydatetime} ({$a->distanceday})';
+$string['assessmentstartevent'] = '{$a} (rozpoczyna się faza recenzowania)';
+$string['assessmentweight'] = 'Waga recenzji';
+$string['assignedassessments'] = 'Prace przydzielone do recenzji';
+$string['assignedassessmentsnone'] = 'Nie masz przydzielonych żadnych prac do recenzji';
+$string['backtoeditform'] = 'Powrót do formularza edycji';
+$string['byfullname'] = 'przez <a href="{$a->url}">{$a->name}</a>';
+$string['byfullnamewithoutlink'] = 'przez {$a}';
+$string['calculategradinggrades'] = 'Przelicz oceny za recenzje';
+$string['calculategradinggradesdetails'] = 'oczekiwane: {$a->expected}<br />obliczone: {$a->calculated}';
+$string['calculatesubmissiongrades'] = 'Przelicz oceny prac';
+$string['calculatesubmissiongradesdetails'] = 'oczekiwane: {$a->expected}<br />obliczone: {$a->calculated}';
+$string['chooseuser'] = 'Wybierz użytkownika ...';
+$string['clearaggregatedgrades'] = 'Wyczyść wszystkie zagregowane oceny';
+$string['clearaggregatedgrades_help'] = 'Zagregowane oceny za prace oraz oceny za recenzje zostaną zresetowane. Możesz je od nowa przeliczyć w fazie ewaluacji ocen.';
+$string['clearaggregatedgradesconfirm'] = 'Czy na pewno chcesz  wyczyścić obliczone oceny prac, oraz oceny za recenzje?';
+$string['clearassessments'] = 'Wyczyść recenzje';
+$string['clearassessments_help'] = 'Oceny obliczone za prace oraz oceny za recenzje zostaną zresetowane. Dane wprowadzone w formularzach recenzowania są zostaną zachowane, ale wszyscy recenzenci muszą ponownie otworzyć formularz recenzji i ponownie kliknąć "Zapisz" aby oceny zostały przeliczone od nowa.';
+$string['clearassessmentsconfirm'] = 'Czy na pewno chcesz usunąć wszystkie oceny za recenzje? Nie można cofnąć tej operacji, studenci będą musieli ponownie zrecenzować prace przydzielone im do oceny.';
+$string['conclusion'] = 'Tekst podsumowujący';
+$string['configexamplesmode'] = 'Domyślny tryb przykładowych recenzji w warsztatach';
+$string['configgrade'] = 'Domyślna maksymalna ocena za prace w warsztatach';
+$string['configgradedecimals'] = 'Domyślna liczba cyfr po przecinku wyświetlana w ocenach';
+$string['configgradinggrade'] = 'Domyślna maksymalna ocena za recenzję w warsztatach';
+$string['configmaxbytes'] = 'Domyślny maksymalny rozmiar pliku z pracą dla wszystkich modułów warsztatu w tym serwisie (parametr ten zależy także od globalnego limitu dla kursów itd.)';
+$string['configstrategy'] = 'Domyślna strategia oceniania dla warsztatów';
+$string['createsubmission'] = 'Dodaj pracę';
+$string['daysago'] = '{$a} dni temu';
+$string['daysleft'] = '{$a} dni pozostało';
+$string['daystoday'] = 'dziś';
+$string['daystomorrow'] = 'jutro';
+$string['daysyesterday'] = 'wczoraj';
+$string['deadlinesignored'] = 'Ograniczenia czasowe Ciebie nie dotyczą';
+$string['deletesubmission'] = 'Usuń pracę';
+$string['editassessmentform'] = 'Edytuj formularz recenzji';
+$string['editassessmentformstrategy'] = 'Edytuj formularz recenzji ({$a})';
+$string['editingassessmentform'] = 'Edycja formularza recenzji';
+$string['editingsubmission'] = 'Edycja pracy';
+$string['editsubmission'] = 'Edytuj pracę';
+$string['err_multiplesubmissions'] = 'Podczas edycji tego formularza inna wersja pracy została zapisana. Składanie wielu prac przez jednego użytkownika jest zabronione.';
+$string['err_removegrademappings'] = 'Nie można usunąć nieużywanych mapowań ocen';
+$string['evaluategradeswait'] = 'Proszę poczekać, aż oceny za recenzje zostaną przeliczone i oceny zostaną wystawione.';
+$string['evaluation'] = 'Ewaluacja oceny';
+$string['evaluationmethod'] = 'Metoda ewaluacji oceny';
+$string['evaluationmethod_help'] = 'Metoda ewaluacji oceny określa w jaki sposób obliczana jest ocena za recenzję. W tej chwili istnieje tylko jedna metoda - porównanie z najlepszą recenzją.';
+$string['eventassessableuploaded'] = 'Wszystkie prace zostały przesłane.';
+$string['eventsubmissionassessed'] = 'Oceniono pracę';
+$string['eventsubmissionassessmentsreset'] = 'Usunięto ocenę pracy';
+$string['eventsubmissioncreated'] = 'Utworzono pracę';
+$string['eventsubmissiondeleted'] = 'Usunięto pracę';
+$string['eventsubmissionreassessed'] = 'Ponownie oceniono pracę';
+$string['eventsubmissionupdated'] = 'Poprawiono pracę';
+$string['eventsubmissionviewed'] = 'Wyświetlono pracę';
+$string['example'] = 'Przykładowa praca';
+$string['exampleadd'] = 'Dodaj przykładową pracę';
+$string['exampleassess'] = 'Zrecenzuj przykładową pracę';
+$string['exampleassessments'] = 'Przykładowe prace do zrecenzowania';
+$string['exampleassesstask'] = 'Zrecenzuj przykładowe prace';
+$string['exampleassesstaskdetails'] = 'oczekiwane: {$a->expected}<br />zrecenzowane: {$a->assessed}';
+$string['examplecomparing'] = 'Porównanie recenzji przykładowej pracy';
+$string['exampledelete'] = 'Usuń przykładową pracę';
+$string['exampledeleteconfirm'] = 'Czy na pewno chcesz usunąć przykładową pracę? Kliknij \'Kontynuuj\', aby potwierdzić usunięcie.';
+$string['exampleedit'] = 'Edytuj przykładową pracę';
+$string['exampleediting'] = 'Edycja przykładowej pracy';
+$string['exampleneedassessed'] = 'Musisz najpierw zrecenzować wszystkie przykładowe prace';
+$string['exampleneedsubmission'] = 'Musisz najpierw złożyć swoją pracę, oraz zrecenzować wszystkie przykładowe prace';
+$string['examplesbeforeassessment'] = 'Przykładowe prace będą dostępne po złożeniu własnej pracy, muszą być zrecenzowane przed przystąpieniem do recenzji prac innych uczestników';
+$string['examplesbeforesubmission'] = 'Przykładowe prace muszą być zrecenzowane przed własną pracą';
+$string['examplesmode'] = 'Tryb recenzowania przykładowych prac';
+$string['examplesubmissions'] = 'Przykładowe prace';
+$string['examplesvoluntary'] = 'Recenzowanie przykładowych prac jest nieobowiązkowe';
+$string['exportsubmission'] = 'Eksportuj tę stronę';
+$string['feedbackauthor'] = 'Informacja zwrotna dla autora';
+$string['feedbackauthorattachment'] = 'Załącznik';
+$string['feedbackby'] = 'Informacja zwrotna od {$a}';
+$string['feedbackreviewer'] = 'Informacja zwrotna dla recenzenta';
+$string['feedbacksettings'] = 'Informacja zwrotna';
+$string['formataggregatedgrade'] = '{$a->grade}';
+$string['formataggregatedgradeover'] = '<del>{$a->grade}</del><br /><ins>{$a->over}</ins>';
+$string['formatpeergrade'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span>';
+$string['formatpeergradeover'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">(<del>{$a->gradinggrade}</del> / <ins>{$a->gradinggradeover}</ins>)</span>';
+$string['formatpeergradeoverweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">(<del>{$a->gradinggrade}</del> / <ins>{$a->gradinggradeover}</ins>)</span> @ <span class="weight">{$a->weight}</span>';
+$string['formatpeergradeweighted'] = '<span class="grade">{$a->grade}</span> <span class="gradinggrade">({$a->gradinggrade})</span> @ <span class="weight">{$a->weight}</span>';
+$string['givengrades'] = 'Wystawił/a ocenę dla...';
+$string['grade_submission_name'] = 'Praca';
+$string['gradecalculated'] = 'Ocena obliczona za pracę';
+$string['gradedecimals'] = 'Miejsca dziesiętne w ocenach';
+$string['gradegivento'] = '>';
+$string['gradeinfo'] = 'Ocena: {$a->received} / {$a->max}';
+$string['gradeitemassessment'] = '{$a->workshopname} (recenzja)';
+$string['gradeitemsubmission'] = '{$a->workshopname} (praca)';
+$string['gradeover'] = 'Nadpisz ocenę za pracę';
+$string['gradereceivedfrom'] = '&lt;';
+$string['gradesreport'] = 'Raport z ocenami warsztatu';
+$string['gradetopassgrading'] = 'Próg zaliczeniowy dla recenzji';
+$string['gradetopasssubmission'] = 'Próg zaliczeniowy dla pracy';
+$string['gradinggrade'] = 'Ocena za recenzję';
+$string['gradinggrade_help'] = 'Ten parametr określa maksymalną ocenę jaka może zostać uzyskana za recenzowanie prac.';
+$string['gradinggradecalculated'] = 'Obliczona ocena za recenzje';
+$string['gradinggradeof'] = 'Ocena za recenzje (z {$a})';
+$string['gradinggradeover'] = 'Nadpisz ocenę za recenzje';
+$string['gradingsettings'] = 'Ustawienia oceniania';
+$string['groupnoallowed'] = 'Nie masz uprawnień, aby uzyskać dostęp do żadnej grupy w tym warsztacie';
+$string['iamsure'] = 'Tak, jestem pewien(a)';
+$string['info'] = 'Informacja';
+$string['instructauthors'] = 'Instrukcja wykonania pracy';
+$string['instructreviewers'] = 'Instrukcja recenzowania';
+$string['introduction'] = 'Opis';
+$string['latesubmissions'] = 'Prace oddane po terminie';
+$string['latesubmissions_desc'] = 'Zezwól na przesłanie prac po terminie końcowym';
+$string['latesubmissions_help'] = 'Jeśli aktywne, autor może złożyć pracę po terminie, lub w fazie recenzowania prac. Prace złożone po terminie nie mogą być edytowane.';
+$string['latesubmissionsallowed'] = 'Prace oddane po terminie są dopuszczone';
+$string['legacyallocationplugincron'] = 'Alokacja starszych warsztatów Cron';
+$string['maxbytes'] = 'Maksymalny rozmiar pliku';
+$string['modulename'] = 'Warsztat';
+$string['modulename_help'] = 'Moduł Warsztat pozwala na zbieranie, przeglądanie oraz wzajemną recenzję prac przesłanych przez studentów.
+
+Studenci składają prace w dowolnym formacie (mogą być to pliki takie jak word, excel, graficzne itp, lub tekst wprowadzany bezpośrednio do edytora).
+
+Prace są recenzowane w oparciu o kryteria zdefiniowane przez nauczyciela w odpowiednim formularzu. Proces wzajemnego recenzowania prac, oraz zrozumienie kryteriów oceny może być wstępnie przećwiczony z wykorzystaniem przykładowych prac do oceny, przesłanych przez nauczyciela. Nauczyciel może również zamieścić przykładowe recenzje tych przykładowych prac.
+Studenci otrzymują do zrecenzowania prace jednego lub więcej współuczestników kursu. Proces recenzji może być anonimowy.
+
+W tym module student otrzymuje dwie oceny: ocena za złożoną pracę, oraz ocena za jakość recenzowania prac innych studentów. Obydwie oceny są widoczne w dzienniku ocen.';
+$string['modulenameplural'] = 'Warsztaty';
+$string['mysubmission'] = 'Moja praca';
+$string['nattachments'] = 'Maksymalna liczba załączników w pracy';
+$string['noexamples'] = 'W tym warsztacie jeszcze nie ma przykładów';
+$string['noexamplesformready'] = 'Musisz przygotować formularz który będzie wykorzystywany do recenzowania prac, zanim udostępnisz przykładowe prace do recenzji';
+$string['nogradeyet'] = 'Jeszcze nie ocenione';
+$string['nosubmissionfound'] = 'Nie znaleziono prac dla tego użytkownika';
+$string['nosubmissions'] = 'Nie ma prac w tym warsztacie';
+$string['nosubmissiontype'] = 'Musi być dostępna przynajmniej jedna forma składania prac';
+$string['notassessed'] = 'Jeszcze nie zrecenzowane';
+$string['nothingfound'] = 'Nie ma nic do wyświetlenia';
+$string['nothingtoreview'] = 'Nie ma nic do recenzji';
+$string['notoverridden'] = 'Nienadpisany';
+$string['noworkshops'] = 'W tym kursie nie ma warsztatów';
+$string['noyoursubmission'] = 'Jeszcze nie przesłałeś swojej pracy';
+$string['nullgrade'] = '-';
+$string['overallfeedback'] = 'Ogólna informacja zwrotna';
+$string['overallfeedbackfiles'] = 'Maksymalna liczba załączników dotycząca całościowej informacji zwrotnej';
+$string['overallfeedbackmaxbytes'] = 'Maksymalny rozmiar pliku';
+$string['overallfeedbackmode'] = 'Tryb całościowej informacji zwrotnej';
+$string['overallfeedbackmode_0'] = 'Wyłączony';
+$string['overallfeedbackmode_1'] = 'Włączony i opcjonalny';
+$string['overallfeedbackmode_2'] = 'Włączony i wymagany';
+$string['page-mod-workshop-x'] = 'Dowolna strona modułu warsztat';
+$string['participant'] = 'Uczestnik';
+$string['participantrevierof'] = 'Uczestnik jest recenzentem';
+$string['participantreviewedby'] = 'Uczestnik jest recenzowany przez';
+$string['phaseassessment'] = 'Faza recenzowania';
+$string['phaseclosed'] = 'Zamknięta';
+$string['phaseevaluation'] = 'Faza ewaluacji ocen';
+$string['phasesetup'] = 'Faza konfiguracji';
+$string['phasesoverlap'] = 'Faza składania prac i faza recenzowania nie mogą na siebie zachodzić';
+$string['phasesubmission'] = 'Faza składania prac';
+$string['pluginadministration'] = 'Administracja warsztatem';
+$string['pluginname'] = 'Warsztat';
+$string['prepareexamples'] = 'Przygotuj przykładowe prace';
+$string['previewassessmentform'] = 'Podgląd';
+$string['privacy:metadata:feedbackauthor'] = 'Informacja zwrotna dla autora';
+$string['privacy:metadata:feedbackauthorformat'] = 'Format tekstowy informacji zwrotnej dla autora';
+$string['privacy:request:delete:title'] = '[Usunięte]';
+$string['publishedsubmissions'] = 'Opublikowane prace';
+$string['publishsubmission'] = 'Opublikuj pracę';
+$string['publishsubmission_help'] = 'Opublikowane prace są widoczne dla innych po zamknięciu warsztatu.';
+$string['reassess'] = 'Recenzuj ponownie';
+$string['receivedgrades'] = 'Otrzymał/a ocenę od...';
+$string['recentassessments'] = 'Recenzje w warsztacie:';
+$string['recentsubmissions'] = 'Prace w warsztacie:';
+$string['resetphase'] = 'Przełącz do fazy konfiguracji';
+$string['resetsubmissions'] = 'Usuń wszystkie prace';
+$string['saveandclose'] = 'Zapisz i zamknij';
+$string['saveandcontinue'] = 'Zapisz i kontynuuj edycję';
+$string['saveandpreview'] = 'Zapisz i wyświetl';
+$string['saveandshownext'] = 'Zapisz i pokaż kolejne';
+$string['search:activity'] = 'Warsztat - informacje o aktywności';
+$string['selfassessmentdisabled'] = 'Recenzowanie własnej pracy wyłączone';
+$string['showingperpage'] = 'Wyświetlane {$a} elementów na stronie';
+$string['showingperpagechange'] = 'Zmień ...';
+$string['someuserswosubmission'] = 'Co najmniej jeden autor nie złożył swojej pracy';
+$string['sortasc'] = 'Sortowanie rosnąco';
+$string['sortdesc'] = 'Sortowanie malejąco';
+$string['strategy'] = 'Strategia oceniania';
+$string['strategy_help'] = 'Strategia oceniania określa formularz recenzji oraz metodę oceniania prac. Istnieją 4 opcje: * Ocenianie łączne - Wystawiane są oceny w określonych skalach i komentarze  * Komentarze - Wystawiane są komentarze, ale nie oceny * Ocenianie tak/nie - Wystawiane są komentarze i oceny typu tak/nie odnoszące się do zadanych kryteriów . Liczy się liczba kryteriów zaliczonych pozytywnie * Tabela kryteriów - najbardziej elastyczna strategia: ocena jest wystawiana według tabeli podanych kryteriów';
+$string['strategyhaschanged'] = 'Strategia oceniania warsztatu zmieniła się, podczas gdy formularz był otwarty do edycji.';
+$string['submission'] = 'Praca';
+$string['submissionattachment'] = 'Załącznik';
+$string['submissionby'] = 'Praca wykonana przez {$a}';
+$string['submissioncontent'] = 'Zawartość pracy';
+$string['submissiondeleteconfirm'] = 'Czy jesteś pewien, że chcesz usunąć następujące prace?';
+$string['submissionend'] = 'Koniec fazy nadsyłania prac';
+$string['submissionendbeforestart'] = 'Koniec fazy nadsyłania prac nie może być ustawiony przed początkiem fazy nadsyłania prac';
+$string['submissionenddatetime'] = 'Ostateczny termin nadsyłania prac: {$a->daydatetime} ({$a->distanceday})';
+$string['submissionendevent'] = '{$a} ostateczny termin przesyłania prac';
+$string['submissionendswitch'] = 'Przełącz do następnej fazy po minięciu terminu nadsyłania prac';
+$string['submissionendswitch_help'] = 'Jeśli ten parametr jest aktywny oraz zdefiniowano koniec fazy nadsyłania prac, warsztat zostanie automatycznie przełączony do fazy recenzowania po minięciu terminu składania prac.
+
+Jeśli aktywujesz tą opcję, wskazane jest skonfigurowanie metody alokacji. Jeśli prace nie są przypisane, nie będzie można ich recenzować, nawet jeśli warsztat będzie w fazie recenzji.';
+$string['submissiongrade'] = 'Ocena za pracę';
+$string['submissiongrade_help'] = 'Ten parametr określa maksymalną oceną jaka może zostać wystawiona za złożoną pracę';
+$string['submissiongradeof'] = 'Ocena za pracę (z {$a})';
+$string['submissionlastmodified'] = 'Ostatnio zmodyfikowane';
+$string['submissionrequiredcontent'] = 'Musisz wpisać tekst lub dodać plik.';
+$string['submissionrequiredfile'] = 'Musisz dodać plik lub wpisać tekst.';
+$string['submissionsallocation'] = 'Przydzielenie prac';
+$string['submissionsettings'] = 'Ustawienia pracy';
+$string['submissionsreport'] = 'Raport z prac warsztatu';
+$string['submissionstart'] = 'Otwórz na składanie prac od';
+$string['submissionstartdatetime'] = 'Otwarte na składanie prac od {$a->daydatetime} ({$a->distanceday})';
+$string['submissionstartevent'] = '{$a} (otwiera się na składanie prac)';
+$string['submissiontitle'] = 'Tytuł';
+$string['submissiontypedisabled'] = 'Ta forma składania prac nie jest dostępna w tym warsztacie.';
+$string['submissiontypefileavailable'] = 'Załączony plik<span class="accesshide"> dostępne</span>';
+$string['submissiontypefilerequired'] = '<span class="accesshide">Załączony plik </span>Wymagane';
+$string['submissiontypes'] = 'Formy składanych prac';
+$string['submissiontypetextavailable'] = 'Tekst online<span class="accesshide"> dostępne</span>';
+$string['submissiontypetextrequired'] = '<span class="accesshide">Tekst online </span>Wymagane';
+$string['submittednotsubmitted'] = 'Przesłane ({$a->submitted}) / nie przesłane ({$a->notsubmitted})';
+$string['subplugintype_workshopallocation'] = 'Metoda przydzielania prac';
+$string['subplugintype_workshopallocation_plural'] = 'Metody przydzielania prac';
+$string['subplugintype_workshopeval'] = 'Metoda ewaluacji oceniania';
+$string['subplugintype_workshopeval_plural'] = 'Metody ewaluacji oceniania';
+$string['subplugintype_workshopform'] = 'Strategia oceniania';
+$string['subplugintype_workshopform_plural'] = 'Strategie oceniania';
+$string['switchingphase'] = 'Przełączanie fazy';
+$string['switchphase'] = 'Przełącz na tę fazę';
+$string['switchphase10'] = 'Przełącz do fazy konfiguracji';
+$string['switchphase10info'] = 'Przełączysz warsztat w <strong>fazę konfiguracji</strong>. W tej fazie użytkownicy nie mogą zmieniać swoich prac, ani swoich recenzji. Nauczyciele mogą wykorzystać tą fazę do zmiany ustawień warsztatu, zmienić strategię oceniania, lub poprawić formularze recenzji.';
+$string['switchphase20'] = 'Przełącz do fazy składania prac';
+$string['switchphase20info'] = 'Przełączysz warsztat w <strong>fazę składania prac</strong>. W tej fazie studenci mogą składać prace (w obrębie wyznaczonego przedziału czasu). Nauczyciele mogą przydzielać prace do wzajemnego recenzowania.';
+$string['switchphase30'] = 'Przełącz do fazy recenzowania';
+$string['switchphase30auto'] = 'Warsztat przełączy się automatycznie do fazy recenzowania, po {$a->daydatetime} ({$a->distanceday})';
+$string['switchphase30info'] = 'Przełączysz warsztat w <strong>fazę recenzowania</strong>. W tej fazie studenci mogą recenzować prace, które zostały im przypisane w tym celu (w obrębie wyznaczonego przedziału czasu).';
+$string['switchphase40'] = 'Przełącz do fazy oceniania';
+$string['switchphase40info'] = 'Przełączysz warsztat w <strong>fazę ewaluacji ocen</strong>. W tej fazie użytkownicy nie mogą modyfikować swoich prac, ani swoich recenzji. Nauczyciel może wykorzystać narzędzia ewaluacyjne do wyliczenia ocen końcowych za warsztat, oraz napisać informację zwrotną dla recenzentów.';
+$string['switchphase50'] = 'Zamknij warsztat';
+$string['switchphase50info'] = 'Zamkniesz warsztat. Obliczone oceny końcowe pojawią się w dzienniku ocen. Studenci mogą wyświetlać złożone prace, oraz recenzje.';
+$string['switchphaseauto'] = 'Automatyczne przełączanie faz zostało ustawione';
+$string['switchphasenext'] = 'Przełącz do następnej fazy';
+$string['taskassesspeers'] = 'Recenzje współuczestników';
+$string['taskassesspeersdetails'] = 'ogółem: {$a->total} <br /> do wykonania: {$a->todo}';
+$string['taskassessself'] = 'Samoocena';
+$string['taskconclusion'] = 'Wprowadź podsumowanie aktywności';
+$string['taskdone'] = 'Zadanie zostało wykonane';
+$string['taskfail'] = 'Zadanie nie powiodło się';
+$string['taskinfo'] = 'Informacje o zadaniu';
+$string['taskinstructauthors'] = 'Podaj instrukcje składanych prac';
+$string['taskinstructreviewers'] = 'Podaj instrukcje recenzowania';
+$string['taskintro'] = 'Ustaw wprowadzenie do warsztatu';
+$string['tasksubmit'] = 'Wyślij swoją pracę';
+$string['tasktodo'] = 'Zadanie do wykonania';
+$string['toolbox'] = 'Przybornik warsztatowy';
+$string['undersetup'] = 'Warsztat jest obecnie w fazie konfiguracji. Proszę czekać, aż zostanie przełączone do kolejnej fazy.';
+$string['useexamples'] = 'Użyj przykładowych prac';
+$string['useexamples_desc'] = 'Przykładowe prace są podane do nabrania wprawy w recenzowaniu';
+$string['useexamples_help'] = 'Jeśli aktywne, użytkownicy mogą spróbować zrecenzować więcej przykładowych prac, oraz porównać własne recenzje z przykładową recenzją. Ta ocena nie jest wliczana do oceny za recenzowanie.';
+$string['usepeerassessment'] = 'Aktywuj wzajemne recenzowanie prac innych uczestników';
+$string['usepeerassessment_desc'] = 'Studenci mogą recenzować prace innych';
+$string['usepeerassessment_help'] = 'Jeśli aktywne, użytkownik może mieć przydzielone do recenzji prace innych użytkowników. Otrzyma ocenę za wystawione recenzje, oraz ocenę za pracę wykonaną przez siebie.';
+$string['userdatecreated'] = 'złożona <span>{$a}</span>';
+$string['userdatemodified'] = 'zmodyfikowana <span>{$a}</span>';
+$string['userplan'] = 'Terminarz warsztatu';
+$string['userplan_help'] = 'Terminarz warsztatu wyświetla wszystkie jego fazy, wraz z listą zadań do wykonania w każdej z nich. Aktualna faza jest wyróżniona, a wykonanie zadania oznaczane jest \'haczykiem\'.';
+$string['userplancurrentphase'] = 'Obecna faza';
+$string['useselfassessment'] = 'Użyj samooceny (recenzji własnych prac).';
+$string['useselfassessment_desc'] = 'Studenci mogą recenzować własne prace';
+$string['useselfassessment_help'] = 'Jeśli aktywne, użytkownikowi może zostać przydzielona własna praca do recenzji, otrzyma także ocenę za wystawione recenzje oraz ocenę za złożoną pracę.';
+$string['viewworkshopsummary'] = 'Wyświetl opis warsztatu';
+$string['weightinfo'] = 'Waga: {$a}';
+$string['withoutsubmission'] = 'Recenzent bez własnej pracy';
+$string['workshop:addinstance'] = 'Dodaj nowy warsztat';
+$string['workshop:allocate'] = 'Przydziel prace do recenzji';
+$string['workshop:deletesubmissions'] = 'Usuń pracę';
+$string['workshop:editdimensions'] = 'Edytuj formularze recenzji';
+$string['workshop:exportsubmissions'] = 'Eksportuj pracę';
+$string['workshop:ignoredeadlines'] = 'Ignoruj ograniczenia czasowe';
+$string['workshop:manageexamples'] = 'Zarządzaj przykładowymi pracami';
+$string['workshop:overridegrades'] = 'Nadpisz wyliczone oceny';
+$string['workshop:peerassess'] = 'Wzajemne recenzowanie';
+$string['workshop:publishsubmissions'] = 'Publikuj prace';
+$string['workshop:submit'] = 'Zatwierdź / wyślij';
+$string['workshop:switchphase'] = 'Przełącz fazę';
+$string['workshop:view'] = 'Zobacz warsztat';
+$string['workshop:viewallassessments'] = 'Zobacz wszystkie recenzje';
+$string['workshop:viewallsubmissions'] = 'Zobacz wszystkie prace';
+$string['workshop:viewauthornames'] = 'Zobacz nazwiska autorów';
+$string['workshop:viewauthorpublished'] = 'Zobacz autorów opublikowanych prac';
+$string['workshop:viewpublishedsubmissions'] = 'Zobacz opublikowane prace';
+$string['workshop:viewreviewernames'] = 'Zobacz nazwiska recenzentów';
+$string['workshopname'] = 'Nazwa warsztatu';
+$string['yourassessmentfor'] = 'Twoja recenzja dla {$a}';
+$string['yourgrades'] = 'Twoje oceny';
+$string['yoursubmission'] = 'Twoja praca';
+$string['yoursubmissionwithassessments'] = 'Twoja praca z oceną';

@@ -1,0 +1,75 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template theme_moove/slideshow
+
+    Blocks drawer template
+
+    Example context (json): {
+        "sliderenabled": true,
+        "slides": [
+            {
+                "key": 1,
+                "active": true,
+                "image": "https://slideurl...",
+                "caption": "Slide cap",
+                "title": "The slide title"
+            }
+        ]
+    }
+}}
+{{#sliderenabled}}
+    <div id="mooveslideshow" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+        <ol class="carousel-indicators responsiveCarouselIndicators">
+			{{#slides}}
+                <li data-target="#mooveslideshow" data-slide-to="{{{ key }}}" {{#active}}class="active"{{/active}}></li>
+            {{/slides}}
+        </ol>
+		<div style="margin-left: 60px !important; bottom: 10px; padding: 8px !important; right:unset; color:white;" class="carousel-indicators responsiveCarouselIndicators d-flex align-items-center mx-2 mx-lg-3 px-lg-1 st-slider-btn-wrapper">
+			<i id="carousel-playBtn" style="display:none;" class="st-slider-play-btn fa fa-play"></i>
+			<i id="carousel-pauseBtn" class="st-slider-pause-btn fa fa-pause"></i>
+		</div>
+
+        <div class="carousel-inner">
+            {{#slides}}
+                <div class="carousel-item {{#active}}active{{/active}}">
+                    <img class="d-block w-100 animated fadeIn" src="{{{ image }}}">
+
+                    <div class="carousel-caption animated fadeInRightBig responsiveCarouselCaption">
+                        {{#title}}<h2 class="title titleResponsive">{{{ title }}}</h2>{{/title}}
+
+                        {{#caption}}<div class="caption responsiveCaption">{{{ caption }}}</div>{{/caption}}
+                    </div>
+                </div>
+            {{/slides}}
+        </div>
+    </div>
+    {{#js}}
+        require(['jquery', 'theme_boost/bootstrap/carousel'], function($, carousel) {
+            $('#mooveslideshow').carousel({
+                interval: 5000,
+                pause: 'hover'
+            });
+			
+			
+        })
+		function test(){
+				console.log("test");
+			}
+    {{/js}}
+{{/sliderenabled}}
